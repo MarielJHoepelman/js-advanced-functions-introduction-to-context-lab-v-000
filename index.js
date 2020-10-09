@@ -64,6 +64,3 @@ function allWagesFor(record){
     console.log(timeEvent)
   }, 0);
 }
-
-
-
