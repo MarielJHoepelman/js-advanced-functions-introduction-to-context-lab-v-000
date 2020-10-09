@@ -19,17 +19,17 @@ function createEmployeeRecord(employeeInfo){
   };
 }
 
-// function createEmployeeRecords(employeesInfo){
-//   return employeesInfo.map(information => {
-//     return createEmployeeRecord(information)
-//   });
-// }
-
-const createEmployeeRecord = employeeData => {
-  return employeeData.map(data => {
-    return createEmployeeRecord(data)
+function createEmployeeRecords(employeesInfo){
+  return employeesInfo.map(information => {
+    return createEmployeeRecord(information)
   });
 }
+
+// const createEmployeeRecord = employeeData => {
+//   return employeeData.map(data => {
+//     return createEmployeeRecord(data)
+//   });
+// }
 
 const createTimeEventObject = (setType, time) => {
   const dateTime = time.split(" ");
