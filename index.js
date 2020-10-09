@@ -36,6 +36,16 @@ function createTimeEventObject(setType, time){
   return obj
 }
 
+const createTimeEventObject = (setType, time) {
+  const dateTime = time.split(" ");
+
+  const obj = {
+    type: setType,
+    hour: parseInt(dateTime[1]),
+    date: dateTime[0]
+  }
+  return obj
+}
 
 // function createTimeInEvent(record, time){
 //   record.timeInEvents.push(createTimeEventObject("TimeIn", time));
