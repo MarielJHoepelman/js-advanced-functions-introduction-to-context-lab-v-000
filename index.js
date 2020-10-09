@@ -63,3 +63,8 @@ function allWagesFor(record){
     return wagesEarnedOnDate(record, timeEvent.date) + total;
   }, 0);
 }
+
+
+function calculatePayroll(records){
+  console.log(records)
+}
