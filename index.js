@@ -18,6 +18,7 @@ const createEmployeeRecord = employeeData => {
     timeOutEvents
   };
 }
+
 const createEmployeeRecords = employeeData => {
   return employeeData.map(data => {
     return createEmployeeRecord(data)
@@ -35,31 +36,16 @@ const createTimeEventObject = (setType, time) => {
   return obj
 }
 
-// function createTimeInEvent(record, time){
-//   record.timeInEvents.push(createTimeEventObject("TimeIn", time));
-//   return record;
-// }
-
 const createTimeInEvent = (record, time) => {
   record.timeInEvents.push(createTimeEventObject("TimeIn", time));
   return record;
 }
-//
-// function createTimeOutEvent(record, time){
-//   record.timeOutEvents.push(createTimeEventObject("TimeOut", time));
-//   return record;
-// }
 
 const createTimeOutEvent = (record, time) => {
   record.timeOutEvents.push(createTimeEventObject("TimeOut", time));
   return record;
 }
-//
-// function hoursWorkedOnDate(record, date){
-//   const timeIn = record.timeInEvents.find(element => element.date === date);
-//   const timeOut = record.timeOutEvents.find(element => element.date === date);
-//   return (timeOut.hour - timeIn.hour)/100
-// }
+
  const hoursWorkedOnDate = (record, date) => {
    const timeIn = record.timeInEvents.find(element => element.date === date);
    const timeOut = record.timeOutEvents.find(element => element.date === date);
