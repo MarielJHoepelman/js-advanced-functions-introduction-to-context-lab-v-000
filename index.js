@@ -19,11 +19,11 @@ function createEmployeeRecord(employeeInfo){
   };
 }
 
-function createEmployeeRecords(employeesInfo){
-  return employeesInfo.map(information => {
-    return createEmployeeRecord(information)
-  });
-}
+// function createEmployeeRecords(employeesInfo){
+//   return employeesInfo.map(information => {
+//     return createEmployeeRecord(information)
+//   });
+// }
 
 const createEmployeeRecords = employeeData => {
   return employeeData.map(data => {
