@@ -52,11 +52,6 @@ const hoursWorkedOnDate = (record, date) => {
   return (timeOut.hour - timeIn.hour)/100;
 }
 
-// function wagesEarnedOnDate(record, date){
-//   const hours = hoursWorkedOnDate(record, date);
-//   return record.payPerHour * hours;
-// }
-
 const wagesEarnedOnDate = (record, date) => {
   const hours = hoursWorkedOnDate(record, date);
   return record.payPerHour * hours;
