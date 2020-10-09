@@ -41,7 +41,12 @@ function createTimeInEvent(record, time){
   record.timeInEvents.push(createTimeEventObject("TimeIn", time));
   return record;
 }
-// 
+
+const createTimeInEvent = (record, time) => {
+  record.timeInEvents.push(createTimeEventObject("TimeIn", time));
+  return record;
+}
+//
 // function createTimeOutEvent(record, time){
 //   record.timeOutEvents.push(createTimeEventObject("TimeOut", time));
 //   return record;
