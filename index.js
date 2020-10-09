@@ -37,10 +37,10 @@ function createTimeEventObject(setType, time){
 }
 
 
-function createTimeInEvent(record, time){
-  record.timeInEvents.push(createTimeEventObject("TimeIn", time));
-  return record;
-}
+// function createTimeInEvent(record, time){
+//   record.timeInEvents.push(createTimeEventObject("TimeIn", time));
+//   return record;
+// }
 
 const createTimeInEvent = (record, time) => {
   record.timeInEvents.push(createTimeEventObject("TimeIn", time));
