@@ -25,11 +25,11 @@ function createEmployeeRecords(employeesInfo){
   });
 }
 
-// const createEmployeeRecord = employeeData => {
-//   return employeeData.map(data => {
-//     return createEmployeeRecord(data)
-//   });
-// }
+const createEmployeeRecords = employeeData => {
+  return employeeData.map(data => {
+    return createEmployeeRecord(data)
+  });
+}
 
 const createTimeEventObject = (setType, time) => {
   const dateTime = time.split(" ");
