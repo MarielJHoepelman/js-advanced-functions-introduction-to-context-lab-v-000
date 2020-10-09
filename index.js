@@ -70,3 +70,7 @@ function calculatePayroll(records){
     return allWagesFor(record) + total;
   }, 0);
 }
+
+function findEmployeeByFirstName(records){
+  
+}
