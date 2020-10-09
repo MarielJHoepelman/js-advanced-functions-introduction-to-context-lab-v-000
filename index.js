@@ -46,6 +46,11 @@ function createTimeOutEvent(record, time){
   record.timeOutEvents.push(createTimeEventObject("TimeOut", time));
   return record;
 }
+
+const createTimeOutEvent = (record, time) => {
+  record.timeOutEvents.push(createTimeEventObject("TimeOut", time));
+  return record;
+}
 //
 // function hoursWorkedOnDate(record, date){
 //   const timeIn = record.timeInEvents.find(element => element.date === date);
