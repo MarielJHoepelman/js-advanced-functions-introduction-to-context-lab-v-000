@@ -57,3 +57,7 @@ function wagesEarnedOnDate(record, date){
   const hours = hoursWorkedOnDate(record, date);
   return record.payPerHour * hours;
 }
+
+function allWagesFor(record){
+  console.log(record)
+}
