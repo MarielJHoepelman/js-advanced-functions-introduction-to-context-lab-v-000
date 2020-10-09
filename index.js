@@ -36,7 +36,7 @@ function createEmployeeRecords(employeesInfo){
 //   return obj
 // }
 
-const createTimeEventObject = (setType, time) {
+const createTimeEventObject = (setType, time) => {
   const dateTime = time.split(" ");
 
   const obj = {
