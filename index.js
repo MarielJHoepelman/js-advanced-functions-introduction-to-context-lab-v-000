@@ -74,10 +74,6 @@ const calculatePayroll = records => {
   }, 0);
 }
 
-// function findEmployeeByFirstName(records, firstName){
-//   return records.find(record => record.firstName === firstName);
-// }
-
 const findEmployeeByFirstName = (records, firstName) => {
   return records.find(record => record.firstName === firstName);
 }
