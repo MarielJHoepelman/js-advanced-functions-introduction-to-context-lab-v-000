@@ -64,6 +64,11 @@ function allWagesFor(record){
   }, 0);
 }
 
+const allWagesFor = record => {
+  return record.timeInEvents.reduce((total, timeEvent) => {
+    return wagesEarnedOnDate(record, timeEvent.date) + total;
+  }, 0);
+}
 
 // function calculatePayroll(records){
 //   return records.reduce((total, record) => {
