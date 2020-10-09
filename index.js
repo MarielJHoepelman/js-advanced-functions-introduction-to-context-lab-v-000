@@ -69,13 +69,7 @@ function allWagesFor(record){
 //   return records.reduce((total, record) => {
 //     return allWagesFor(record) + total;
 //   }, 0);
-
-  const calculatePayroll = records => {
-    return records.reduce((total, record) => {
-      return allWagesFor(record + total)
-    }, 0);
-  }
-}
+// }
 
 // function findEmployeeByFirstName(records, firstName){
 //   return records.find(record => record.firstName === firstName);
