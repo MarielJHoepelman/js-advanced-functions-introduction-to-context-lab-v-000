@@ -59,7 +59,6 @@ function wagesEarnedOnDate(record, date){
 }
 
 function allWagesFor(record){
-  console.log(record)
   const totalWages = record.timeInEvents.reduce((total, timeEvent) => {
     console.log(timeEvent)
     return total
