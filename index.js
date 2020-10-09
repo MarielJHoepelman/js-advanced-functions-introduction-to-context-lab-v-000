@@ -46,12 +46,17 @@ function createTimeOutEvent(record, time){
   record.timeOutEvents.push(createTimeEventObject("TimeOut", time));
   return record;
 }
-
-function hoursWorkedOnDate(record, date){
-  const timeIn = record.timeInEvents.find(element => element.date === date);
-  const timeOut = record.timeOutEvents.find(element => element.date === date);
-  return (timeOut.hour - timeIn.hour)/100
-}
+// 
+// function hoursWorkedOnDate(record, date){
+//   const timeIn = record.timeInEvents.find(element => element.date === date);
+//   const timeOut = record.timeOutEvents.find(element => element.date === date);
+//   return (timeOut.hour - timeIn.hour)/100
+// }
+ const hoursWorkedOnDate = (record, date) => {
+   const timeIn = record.timeInEvents.find(element => element.date === date);
+   const timeOut = record.timeOutEvents.find(element => element.date === date);
+   return (timeOut.hour - timeIn.hour)/100
+ }
 
 // function wagesEarnedOnDate(record, date){
 //   const hours = hoursWorkedOnDate(record, date);
