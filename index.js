@@ -72,5 +72,5 @@ function calculatePayroll(records){
 }
 
 function findEmployeeByFirstName(records, firstName){
-  console.log(record)
+  console.log(records)
 }
