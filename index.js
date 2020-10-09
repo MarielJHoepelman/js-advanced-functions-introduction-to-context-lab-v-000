@@ -19,12 +19,25 @@ function createEmployeeRecord(employeeInfo){
   };
 }
 
-// function createEmployeeRecords(employeesInfo){
-//   return employeesInfo.map(information => {
-//     return createEmployeeRecord(information)
-//   });
-// }
+const createEmployeeRecord = employeeData => {
+  const [
+    firstName,
+    familyName,
+    title,
+    payPerHour,
+    timeInEvents = [],
+    timeOutEvents = [],
+  ] = employeeInfo;
 
+  return {
+    firstName,
+    familyName,
+    title,
+    payPerHour,
+    timeInEvents,
+    timeOutEvents
+  };
+}
 const createEmployeeRecords = employeeData => {
   return employeeData.map(data => {
     return createEmployeeRecord(data)
