@@ -1,24 +1,4 @@
 // Your code here
-// function createEmployeeRecord(employeeInfo){
-//   const [
-//     firstName,
-//     familyName,
-//     title,
-//     payPerHour,
-//     timeInEvents = [],
-//     timeOutEvents = [],
-//   ] = employeeInfo;
-//
-//   return {
-//     firstName,
-//     familyName,
-//     title,
-//     payPerHour,
-//     timeInEvents,
-//     timeOutEvents
-//   };
-// }
-
 const createEmployeeRecord = employeeData => {
   const [
     firstName,
