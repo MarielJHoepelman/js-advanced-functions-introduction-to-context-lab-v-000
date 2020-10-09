@@ -25,17 +25,6 @@ function createEmployeeRecords(employeesInfo){
   });
 }
 
-// function createTimeEventObject(setType, time){
-//   const dateTime = time.split(" ");
-//
-//   const obj = {
-//     type: setType,
-//     hour: parseInt(dateTime[1]),
-//     date: dateTime[0]
-//   }
-//   return obj
-// }
-
 const createTimeEventObject = (setType, time) => {
   const dateTime = time.split(" ");
 
