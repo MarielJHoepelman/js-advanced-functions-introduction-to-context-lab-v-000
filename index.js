@@ -27,7 +27,7 @@ const createEmployeeRecord = employeeData => {
     payPerHour,
     timeInEvents = [],
     timeOutEvents = [],
-  ] = employeeInfo;
+  ] = employeeData;
 
   return {
     firstName,
