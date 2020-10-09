@@ -62,12 +62,6 @@ const wagesEarnedOnDate = (record, date) => {
   return record.payPerHour * hours;
 }
 
-// function allWagesFor(record){
-//   return record.timeInEvents.reduce((total, timeEvent) => {
-//     return wagesEarnedOnDate(record, timeEvent.date) + total;
-//   }, 0);
-// }
-
 const allWagesFor = record => {
   return record.timeInEvents.reduce((total, timeEvent) => {
     return wagesEarnedOnDate(record, timeEvent.date) + total;
